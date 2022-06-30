@@ -1,1 +1,1 @@
-# Portfolio
+# Портфолио Python Developer (Data Science)##Используемые библиотеки/фреймворки:- [Pandas](https://pandas.pydata.org/)- [SkLearn](https://scikit-learn.org/stable/index.html)- [TensorFlow](https://www.tensorflow.org/)- [Keras](https://keras.io/)- [Django](https://www.djangoproject.com/)- [Matplotlib](https://matplotlib.org/l)- [OpenCV](https://opencv.org/)- [NLTK](https://www.nltk.org/)- [Gensim](https://radimrehurek.com/gensim/)## Описание выполненных работ- [Gensim](https://github.com/JellyWilliam/Portfolio/)

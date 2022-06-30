@@ -1,0 +1,627 @@
+{% load static %}
+
+<!DOCTYPE >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Детализация платы">
+    <meta name="description" content="">
+    <title>Детализация платы</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/tarif.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.11.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link rel="icon" href="https://tech.orel-ecenter.ru/wp-content/uploads/2020/01/1-1-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://tech.orel-ecenter.ru/wp-content/uploads/2020/01/1-1.png" sizes="192x192">
+    <script type="application/ld+json">{
+  		"@context": "http://schema.org",
+  		"@type": "Organization",
+  		"name": ""}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="tarif">
+    <meta property="og:type" content="website">
+  </head>
+    <body class="u-body u-xl-mode">
+      <header class="u-clearfix u-header u-header" id="sec-0335"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-align-left u-dropdown-icon u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#" style="font-size: calc(1em + 16px);">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5c50"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-5c50" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
+                </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/" style="padding: 10px 20px;">Главная</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/personal_area" style="padding: 10px 20px;">Личный кабинет</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/newsl" style="padding: 10px 20px;">Новости</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="" data-page-id="2092709226" style="padding: 10px 20px;">Модули</a>
+                <div class="u-nav-popup">
+                  <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="/tarif">Детализация платы</a>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">Расчет износа</a>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">АДС</a>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">РСО</a>
+                    </li>
+                  </ul>
+                </div>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/about" style="padding: 10px 20px;">О "ЭРА ЖКХ"</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="https://tech.orel-ecenter.ru" target="_blank" style="padding: 10px 20px;">О компании</a>
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">Главная</a>
+                  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/personal_areal">Личный кабинет</a>
+                  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/news">Новости</a>
+                  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="" data-page-id="2092709226">Модули</a>
+                  <div class="u-nav-popup">
+                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4">
+                      <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/tarif">Детализация платы</a>
+                      </li><li class="u-nav-item"><a class="u-button-style u-nav-link">Расчет износа</a>
+                      </li><li class="u-nav-item"><a class="u-button-style u-nav-link">АДС</a>
+                      </li><li class="u-nav-item"><a class="u-button-style u-nav-link">РСО</a>
+                      </li>
+                    </ul>
+                  </div>
+                  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/about">О "ЭРА ЖКХ"</a>
+                  </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://tech.orel-ecenter.ru" target="_blank">О компании</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <p class="u-align-center u-custom-font u-heading-font u-text u-text-default u-text-1">МЕНЮ</p>
+      </div>
+      </header>
+      {% if not d_hidden or not c_hidden %}
+    <section class="u-carousel u-slide u-block-35ae-1" id="carousel_d40a" data-interval="5000" data-u-ride="carousel">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-35ae-2">
+        <li data-u-target="#carousel_d40a" class="u-active u-grey-30" data-u-slide-to="0"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-shading u-section-1-1" src="" data-image-width="256" data-image-height="256">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h1 class="u-text u-text-default u-title u-text-1">Детализация платы</h1>
+            <p class="u-large-text u-text u-text-variant u-text-2">Моудль расчета и детализации платы за содержание МКД</p>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-35ae-3" href="#carousel_d40a" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg class="u-svg-link" viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+        <span class="sr-only">Предыдущая</span>
+      </a>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-30 u-block-35ae-4" href="#carousel_d40a" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg class="u-svg-link" viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+        <span class="sr-only">Далее</span>
+      </a>
+    </section>
+    {% endif %}
+    <section class="u-align-center u-clearfix u-section-2" id="carousel_acdc">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-tab-links-align-justify u-tabs u-tabs-1">
+          <ul class="u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="{% if not c_hidden %} {{ "active"  }} {% endif %} u-active-white u-border-6 u-border-active-palette-1-base u-border-grey-15 u-border-hover-grey-15 u-border-no-bottom u-border-no-left u-border-no-right u-button-style u-grey-10 u-hover-grey-10 u-tab-link u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">Детализация платы</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="{% if c_hidden %} {{ "active"  }} {% endif %} u-active-white u-border-6 u-border-active-palette-1-base u-border-grey-15 u-border-hover-grey-15 u-border-no-bottom u-border-no-left u-border-no-right u-button-style u-grey-10 u-hover-grey-10 u-tab-link u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">Расчет размера платы</a>
+            </li>
+            <li class="u-tab-item u-tab-item-3" role="presentation">
+              <a class="u-active-white u-border-6 u-border-active-palette-1-base u-border-grey-15 u-border-hover-grey-15 u-border-no-bottom u-border-no-left u-border-no-right u-button-style u-grey-10 u-hover-grey-10 u-tab-link u-tab-link-3" id="tab-6ff1" href="#link-tab-6ff1" role="tab" aria-controls="link-tab-6ff1" aria-selected="false">База данных расшифровок</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style {% if not c_hidden %} {{ "u-tab-active"  }} {% endif %}  u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="u-form u-form-1">
+                  <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"  name="Detail" style="padding: 10px;">
+                    {% csrf_token %}
+                    <div class="u-form-group u-form-name">
+                      <label for="d-address" class="u-label">Адрес</label>
+                      <input type="text" value="{{ d_address }}" placeholder="Введите адрес" id="d-address" name="d-address" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                    </div>
+                    <div class="u-form-group">
+                      <label for="d-company" class="u-label">Управляющая организация</label>
+                      <input type="text" value="{{ d_company }}" placeholder="Введите название управляющей компании" id="d-company" name="d-company" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-4">
+                      <label for="d-boardSize" class="u-label">Размер платы</label>
+                      <input type="number"   value="{{ d_boardSize }}"  min='0' step="0.01" placeholder="Введите имеющийся размер платы" id="d-boardSize" name="d-boardSize" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-5">
+                      <label for="d-totalArea" class="u-label">Площадь МКД общая</label>
+                      <input type="number"   value="{{ d_totalArea }}"  min='0' step="1" placeholder="Введите общую площадь здания" id="d-totalArea" name="d-totalArea" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-6">
+                      <label for="d-areaResidential" class="u-label">Площадь жилых и нежилых помещений</label>
+                      <input type="number"   value="{{ d_areaResidential }}"  min='0' step="1" id="d-areaResidential" name="d-areaResidential" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" placeholder="Введите площадь жилых и не жилых помещений" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="d-floor" class="u-label">Этажность</label>
+                      <input type="number"   value="{{ d_floor }}"  min='0' step="1" placeholder="Введите количество этажей" id="d-floor" name="d-floor" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-date u-form-group u-form-group-8">
+                      <label for="d-yearCommissioning" class="u-label">Год ввода в эксплуатацию</label>
+                      <input type="number" value="{{ d_yearCommissioning }}" min='1900' max='{{ year_now }}' placeholder="Введите год ввода в эксплуатацию или год последнего капитального ремонта" id="d-yearCommissioning" name="d-yearCommissioning" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-9">
+                      <label for="d-walls" class="u-label">Типы стен</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="d-walls" name="d-walls" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                          <option value="1">Монолитные или кирпичные</option>
+                          <option value="1.25">Железобетонные</option>
+                          <option value="1.5">Из прочих материалов</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-10">
+                      <label for="d-improvement" class="u-label">Оборудование и благоустройство (отметить)</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="d-improvement" name="d-improvement[]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" size="10" multiple="multiple">
+                          <option value="1">Холодное водоснабжение</option>
+                          <option value="2">Центральное отопление</option>
+                          <option value="3">Водоотведение</option>
+                          <option value="4">Горячее водоснабжение</option>
+                          <option value="5">Газоснабжение</option>
+                          <option value="6">Лифты</option>
+                          <option value="7">Мусоропровод</option>
+                          <option value="8">Локальная котельня</option>
+                          <option value="9">Внутридомовой бойлер</option>
+                          <option value="10">Детская и/или спортивная площадка</option>
+                          <option value="11">Внутридомовые рециркуляционные насосы горячего водоснабжения</option>
+                          <option value="12">Внутридомовая пожарная или пожарно-охранная сигнализация</option>
+                          <option value="13">Внутридомовая автоматизированная система коммерческого учета электроэнергии и (или) теплоснабжения и (или) горячего водоснабжения и (или) холодного водоснабжения</option>
+                          <option value="14">Узел(узлы) учета и (или) система автоматического регулирования (АСКУЭ)</option>
+                          <option value="15">Уборка лестничных клеток</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="u-align-left u-form-group u-form-submit">
+                      <!-- <a href="#" class="u-active-palette-5-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-5-base u-palette-5-light-2 u-radius-50 u-btn-1">Детализация</a> -->
+                      <input type="submit" value="Детализация" name="Detail" class="u-active-palette-5-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-5-base u-palette-5-light-2 u-radius-50 u-btn-1">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success">Детализация удалась</div>
+                    <div class="u-form-send-error u-form-send-message">Детализация не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз.</div>
+                  </form>
+                  {% if d_hidden %}
+                  <div id="table_detail" name="table_detail">
+                    <table class="u-table-entity">
+                      <colgroup>
+                        <col width="35.0%">
+                        <col width="35.0%">
+                        <col width="15.0%">
+                        <col width="15.5%">
+                      </colgroup>
+                      <thead class="u-palette-5-dark-3 u-table-header u-table-header-1">
+                        <tr style="height: 70px;">
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Адрес: {{ d_address }}</th>
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">УО: {{ d_company }}</th>
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-3">Размер платы: {{ d_boardSize }}</th>
+                          <th colspan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-4">Дата: {{ date }}</th>
+                        </tr>
+                        <tr style="height: 70px;">
+                          <th rowSpan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Статьи отчислений</th>
+                          <th rowSpan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Виды работ</th>
+                          <th rowSpan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-3">Ежемесячная плата - руб./кв.м.</th>
+                          <th colspan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-4">Начислено</th>
+                        </tr>
+                        <tr style="height: 70px;">
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Месяц</th>
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Год</th>
+                        </tr>
+                      </thead>
+                      <tbody class="u-black u-table-body u-table-body-1">
+                        {% for el in d_arr %}
+                          <tr style="height: 66px;">
+                            <th scope="row" class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-6">{{ el.category }}</th>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-7">{{ el.name }}</td>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-8">{{ el.v1 }}</td>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-9">{{ el.v2 }}</td>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-10">{{ el.v3 }}</td>
+                          </tr>
+                        {% endfor %}
+                          <tr style="height: 66px;">
+                              <th scope="row" class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-6">Итого</th>
+                              <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-7"></td>
+                              <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-8">{{ d_sum }}</td>
+                              <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-9">{{ d_sum_square }}</td>
+                              <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-10">{{ d_sum_year }}</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div class="u-align-left {% if c_hidden %} {{ "u-tab-active"  }} {% endif %} u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="u-expanded-width u-form u-form-2">
+                  <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="Calculate" style="padding: 10px;">
+                    {% csrf_token %}
+                    <div class="u-form-group u-form-name">
+                      <label for="c-adress" class="u-label">Адрес</label>
+                      <input type="text" value="{{ c_address }}" placeholder="Введите адрес" id="c-adress" name="c-adress" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                    </div>
+                    <div class="u-form-group">
+                      <label for="c-company" class="u-label">Управляющая организация</label>
+                      <input type="text" value="{{ c_company }}" placeholder="Введите название управляющей компании" id="c-company" name="c-company" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-date u-form-group u-form-group-8">
+                      <label for="c-year" class="u-label">Год ввода в эксплуатацию</label>
+                      <input type="number" value="{{ c_year }}" min='1900' max='{{ year_now }}' placeholder="Введите год ввода в эксплуатацию/год последнего капитального ремонта" id="c-year" name="c-year" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-4">
+                      <label for="c-floor_all" class="u-label">Количество этажей, в том числе подземных этажей</label>
+                      <input type="number" value="{{ c_floor_all }}"  min='0' step="1" placeholder="Введите количество этажей, в том числе подземных этажей" id="c-floor_all" name="c-floor_all" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-5">
+                      <label for="c-floor_underground" class="u-label">Количество подземных этажей/подвал</label>
+                      <input type="number" value="{{ c_floor_underground }}"  min='0' step="1" placeholder="Введите количество подземных этажей/подвал" id="c-floor_underground" name="c-floor_underground" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-6">
+                      <label for="c-entrances" class="u-label">Количество подъездов</label>
+                      <input type="number" value="{{ c_entrances }}"  min='0' step="1" placeholder="Введите количество подъездов" id="c-entrances" name="c-entrances" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-apartments" class="u-label">Количество квартир</label>
+                      <input type="number" value="{{ c_apartments }}"  min='0' step="1" placeholder="Введите количество квартир" id="c-apartments" name="c-apartments" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-residents" class="u-label">Количество проживающих</label>
+                      <input type="number" value="{{ c_residents }}"  min='0' step="1" placeholder="Введите количество проживающих" id="c-residents" name="c-residents" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-area_all" class="u-label">Площадь здания (многоквартирного дома), кв.м</label>
+                      <input type="number" value="{{ c_area_all }}"  min='0' step="0.1" placeholder="Введите площадь здания (многоквартирного дома), кв.м" id="c-area_all" name="c-area_all" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-4">
+                      <label for="c-area_resident" class="u-label">Площадь жилых и нежилых помещений, кв.м</label>
+                      <input type="number" value="{{ c_area_resident }}"  min='0' step="0.1" placeholder="Введите площадь жилых и нежилых помещений, кв.м" id="c-area_resident" name="c-area_resident" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-5">
+                      <label for="c-area_attic" class="u-label">Площадь чердака, кв.м</label>
+                      <input type="number" value="{{ c_area_attic }}"  min='0' step="0.1" placeholder="Введите площадь чердака, кв.м" id="c-area_attic" name="c-area_attic" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-6">
+                      <label for="c-area_basement" class="u-label">Площадь подвала, кв.м</label>
+                      <input type="number" value="{{ c_area_basement }}"  min='0' step="0.1" placeholder="Введите площадь подвала, кв.м" id="c-area_basement" name="c-area_basement" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" placeholder="Введите площадь жилых и не жилых помещений" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-area_land_mar" class="u-label">Площадь лестничных площадок и маршей, кв.м</label>
+                      <input type="number" value="{{ c_area_land_mar }}"  min='0' step="0.1" placeholder="Введите площадь лестничных площадок и маршей, кв.м" id="c-area_land_mar" name="c-area_land_mar" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-n_gar_chute" class="u-label">Количество загрузочных клапанов мусоропровода</label>
+                      <input type="number" value="{{ c_n_gar_chute }}"  min='0' step="1" placeholder="Введите количество загрузочных клапанов мусоропровода" id="c-n_gar_chute" name="c-n_gar_chute" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-elevators" class="u-label">Количество лифтов</label>
+                      <input type="number" value="{{ c_elevators }}"  min='0' step="1" placeholder="Введите количество лифтов" id="c-elevators" name="c-elevators" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-area_elevator" class="u-label">Площадь кабин лифтов</label>
+                      <input type="number" value="{{ c_area_elevator }}"  min='0' step="0.1" placeholder="Введите площадь кабин лифтов" id="c-area_elevator" name="c-area_elevator" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-rate_ret" class="u-label">Норма прибыли % (доля за управление)</label>
+                      <input type="number" value="{{ c_rate_ret }}"  min='0' step="1" placeholder="Введите норму прибыли % (доля за управление)" id="c-rate_ret" name="c-rate_ret" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-base_lift" class="u-label">Базовая ставка обслуживание 1-го лифта</label>
+                      <input type="number" value="{{ c_base_lift }}"  min='0' step="1" placeholder="Введите базовую ставку обслуживание 1-го лифта" id="c-base_lift" name="c-base_lift" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                    </div>
+                    <div class="u-form-group u-form-group-7">
+                      <label for="c-mrot" class="u-label">МРОТ</label>
+                      <input type="number" value="{{ c_mrot }}"  min='10000' max='30000' step="1" placeholder="Введите МРОТ (не обязательно)" id="c-mrot" name="c-mrot" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-9">
+                      <label for="c-type_exterior_wall" class="u-label">Тип наружных стен</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="c-type_exterior_wall" name="c-type_exterior_wall" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                          <option value="1">Каменные (кирпичные)</option>
+                          <option value="2">Крупноблочные</option>
+                          <option value="3">Крупнопанельные</option>
+                          <option value="4">Облегченной кладки из кирпича</option>
+                          <option value="5">Из шлакоблоков</option>
+                          <option value="6">Из ракушечника</option>
+                          <option value="7">Смешанные (кирпичные и деревянные)</option>
+                          <option value="8">Сырцовые</option>
+                          <option value="9">Рубленные</option>
+                          <option value="10">Брусчатые</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-9">
+                      <label for="c-type_found" class="u-label">Тип фундамента</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="c-type_found" name="c-type_found" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                          <option value="1">Бетонные</option>
+                          <option value="2">Каменные</option>
+                          <option value="3">Тенточные бутовые</option>
+                          <option value="4">Облегченной кладки из кирпича</option>
+                          <option value="5">Из шлакоблоков</option>
+                          <option value="6">Из ракушечника</option>
+                          <option value="7">Смешанные (кирпичные и деревянные)</option>
+                          <option value="8">Сырцовые</option>
+                          <option value="9">Рубленные</option>
+                          <option value="10">Брусчатые</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-9">
+                      <label for="c-type_overlap" class="u-label">Тип перекрытия</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="c-type_overlap" name="c-type_overlap" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                          <option value="1">Железобетонные</option>
+                          <option value="2">Cмешанные (деревянные и железобетонные)</option>
+                          <option value="3">Деревянные</option>
+                          <option value="4">Каменные своды по металлическим балкам</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-10">
+                      <label for="c-provision" class="u-label">Снабжение</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="c-provision" name="c-provision[]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" size="6" multiple="multiple">
+                          <option value="1">Централизованное отопление</option>
+                          <option value="2">Отопление и ГВС от АОГВ</option>
+                          <option value="3">Горячее водоснабжение</option>
+                          <option value="4">Холодное водоснабжение</option>
+                          <option value="5">Водоотведение</option>
+                          <option value="6">Газоснабжение</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="u-form-group u-form-select u-form-group-10">
+                      <label for="c-services" class="u-label">Обязательные работы, услуги</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="c-services" name="c-services[]" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" size="10" multiple="multiple">
+                          <option value="1">Подметание лестничных площадок и маршей</option>
+                          <option value="2">Подметание лестничных площадок и маршей  с предварительным их увлажнением</option>
+                          <option value="3">Мытье лестничных площадок и маршей</option>
+                          <option value="4">Влажное подметание мест перед загрузочными камерами мусоропровода</option>
+                          <option value="5">Мытье окон</option>
+                          <option value="6">Иная работа по санитарной уборке подъездов и лестничных клеток</option>
+                          <option value="7">Подметание кабин лифтов с предварительным их увлажнением</option>
+                          <option value="8">Уборка чердачного помещения</option>
+                          <option value="9">Уборка  подвального помещения</option>
+                          <option value="10">Содержание и ремонт лифтов</option>
+                          <option value="11">Работы по содержанию мусоропровода</option>
+                          <option value="12">Работы по содержанию и обслуживанию системы отопления</option>
+                          <option value="13">Работы по обслуживанию газовых сетей</option>
+                          <option value="14">Техническое обслуживание и ремонт внутридомовых сетей и инженерного оборудования</option>
+                          <option value="15">Техническое обслуживание и ремонт конструктивных элементов зданий</option>
+                          <option value="16">Аварийно-диспетчерское обслуживание</option>
+                          <option value="17">Текущий ремонт (планово- предупредительный)</option>
+                          <option value="18">Содержание иного общего имущества</option>
+                          <option value="19">Работы по содержанию придомовой территории (санитарное содержание и благоустройство)</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="u-align-left u-form-group u-form-submit">
+                      <!-- <a href="#" class="u-active-palette-5-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-5-base u-palette-5-light-2 u-radius-50 u-btn-1">Детализация</a> -->
+                      <input type="submit" value="Рассчитать" name="Calculate" class="u-active-palette-5-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-5-base u-palette-5-light-2 u-radius-50 u-btn-1">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success">Расчет удался</div>
+                    <div class="u-form-send-error u-form-send-message">Расчет не удался. Пожалуйста, исправьте ошибки и попробуйте еще раз.</div>
+                  </form>
+                  {% if c_hidden %}
+                  <div id="table_calculate" name="table_calculate">
+                    <table class="u-table-entity">
+                      <colgroup>
+                        <col width="35.0%">
+                        <col width="35.0%">
+                        <col width="15.0%">
+                        <col width="15.5%">
+                      </colgroup>
+                      <thead class="u-palette-5-dark-3 u-table-header u-table-header-1">
+                        <tr style="height: 70px;">
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Адрес: {{ c_address }}</th>
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">УО: {{ c_company }}</th>
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-3">Размер платы: {{ c_boardSize }}</th>
+                          <th colspan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-4">Дата: {{ date }}</th>
+                        </tr>
+                        <tr style="height: 70px;">
+                          <th rowSpan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Статьи отчислений</th>
+                          <th rowSpan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Виды работ</th>
+                          <th rowSpan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-3">Ежемесячная плата - руб./кв.м.</th>
+                          <th colspan="2" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-4">Начислено</th>
+                        </tr>
+                        <tr style="height: 70px;">
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Месяц</th>
+                          <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Год</th>
+                        </tr>
+                      </thead>
+                      <tbody class="u-black u-table-body u-table-body-1">
+                        {% for el in c_arr %}
+                          <tr style="height: 66px;">
+                            <th scope="row" class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-6">{{ el.category }}</th>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-7">{{ el.name }}</td>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-8">{{ el.v1 }}</td>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-9">{{ el.v2 }}</td>
+                            <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-10">{{ el.v3 }}</td>
+                          </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="link-tab-6ff1" role="tabpanel" aria-labelledby="tab-6ff1">
+              <div class="u-container-layout u-container-layout-3">
+                <div class="u-expanded-width u-table u-table-responsive u-table-1">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="3.0%">
+                      <col width="35.0%">
+                      <col width="39.0%">
+                      <col width="11.5%">
+                      <col width="11.5%">
+                    </colgroup>
+                    <thead class="u-palette-5-dark-3 u-table-header u-table-header-1">
+                      <tr style="height: 70px;">
+                        <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-1">№</th>
+                        <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-2">Управляющая организация</th>
+                        <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-3">Адрес</th>
+                        <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-4">Дата</th>
+                        <th class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-5">Подробнее</th>
+                      </tr>
+                    </thead>
+                    <tbody class="u-black u-table-body u-table-body-1">
+                      <tr style="height: 66px;">
+                        <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-6">1</td>
+                        <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-7">ООО УК "ОРЕЛКОМПРЕССОРМАШ"</td>
+                        <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-8">г Орёл, Наугорское шоссе, д 29А</td>
+                        <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-9">20.09.2021</td>
+                        <td class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-white u-table-cell-10">
+                          <a href="#" class="u-border-none u-btn u-button-style u-none">
+                            <span class="u-icon">
+                              <svg class="u-svg-content" viewBox="0 0 55 55" x="0px" y="0px" style="width: 1em; height: 1em;">
+                                <path d="M52.354,8.51C51.196,4.22,42.577,0,27.5,0C12.423,0,3.803,4.22,2.646,8.51C2.562,8.657,2.5,8.818,2.5,9v0.5V21v0.5V22v11
+                                	v0.5V34v12c0,0.162,0.043,0.315,0.117,0.451C3.798,51.346,14.364,55,27.5,55c13.106,0,23.655-3.639,24.875-8.516
+                                	C52.455,46.341,52.5,46.176,52.5,46V34v-0.5V33V22v-0.5V21V9.5V9C52.5,8.818,52.438,8.657,52.354,8.51z M50.421,33.985
+                                	c-0.028,0.121-0.067,0.241-0.116,0.363c-0.04,0.099-0.089,0.198-0.143,0.297c-0.067,0.123-0.142,0.246-0.231,0.369
+                                	c-0.066,0.093-0.141,0.185-0.219,0.277c-0.111,0.131-0.229,0.262-0.363,0.392c-0.081,0.079-0.17,0.157-0.26,0.236
+                                	c-0.164,0.143-0.335,0.285-0.526,0.426c-0.082,0.061-0.17,0.12-0.257,0.18c-0.226,0.156-0.462,0.311-0.721,0.463
+                                	c-0.068,0.041-0.141,0.08-0.212,0.12c-0.298,0.168-0.609,0.335-0.945,0.497c-0.043,0.021-0.088,0.041-0.132,0.061
+                                	c-0.375,0.177-0.767,0.351-1.186,0.519c-0.012,0.005-0.024,0.009-0.036,0.014c-2.271,0.907-5.176,1.67-8.561,2.17
+                                	c-0.017,0.002-0.034,0.004-0.051,0.007c-0.658,0.097-1.333,0.183-2.026,0.259c-0.113,0.012-0.232,0.02-0.346,0.032
+                                	c-0.605,0.063-1.217,0.121-1.847,0.167c-0.288,0.021-0.59,0.031-0.883,0.049c-0.474,0.028-0.943,0.059-1.429,0.076
+                                	C29.137,40.984,28.327,41,27.5,41s-1.637-0.016-2.432-0.044c-0.486-0.017-0.955-0.049-1.429-0.076
+                                	c-0.293-0.017-0.595-0.028-0.883-0.049c-0.63-0.046-1.242-0.104-1.847-0.167c-0.114-0.012-0.233-0.02-0.346-0.032
+                                	c-0.693-0.076-1.368-0.163-2.026-0.259c-0.017-0.002-0.034-0.004-0.051-0.007c-3.385-0.5-6.29-1.263-8.561-2.17
+                                	c-0.012-0.004-0.024-0.009-0.036-0.014c-0.419-0.168-0.812-0.342-1.186-0.519c-0.043-0.021-0.089-0.041-0.132-0.061
+                                	c-0.336-0.162-0.647-0.328-0.945-0.497c-0.07-0.04-0.144-0.079-0.212-0.12c-0.259-0.152-0.495-0.307-0.721-0.463
+                                	c-0.086-0.06-0.175-0.119-0.257-0.18c-0.191-0.141-0.362-0.283-0.526-0.426c-0.089-0.078-0.179-0.156-0.26-0.236
+                                	c-0.134-0.13-0.252-0.26-0.363-0.392c-0.078-0.092-0.153-0.184-0.219-0.277c-0.088-0.123-0.163-0.246-0.231-0.369
+                                	c-0.054-0.099-0.102-0.198-0.143-0.297c-0.049-0.121-0.088-0.242-0.116-0.363C4.541,33.823,4.5,33.661,4.5,33.5
+                                	c0-0.113,0.013-0.226,0.031-0.338c0.025-0.151,0.011-0.302-0.031-0.445v-7.424c0.028,0.026,0.063,0.051,0.092,0.077
+                                	c0.218,0.192,0.44,0.383,0.69,0.567C9.049,28.786,16.582,31,27.5,31c10.872,0,18.386-2.196,22.169-5.028
+                                	c0.302-0.22,0.574-0.447,0.83-0.678l0.001-0.001v7.424c-0.042,0.143-0.056,0.294-0.031,0.445c0.019,0.112,0.031,0.225,0.031,0.338
+                                	C50.5,33.661,50.459,33.823,50.421,33.985z M50.5,13.293v7.424c-0.042,0.143-0.056,0.294-0.031,0.445
+                                	c0.019,0.112,0.031,0.225,0.031,0.338c0,0.161-0.041,0.323-0.079,0.485c-0.028,0.121-0.067,0.241-0.116,0.363
+                                	c-0.04,0.099-0.089,0.198-0.143,0.297c-0.067,0.123-0.142,0.246-0.231,0.369c-0.066,0.093-0.141,0.185-0.219,0.277
+                                	c-0.111,0.131-0.229,0.262-0.363,0.392c-0.081,0.079-0.17,0.157-0.26,0.236c-0.164,0.143-0.335,0.285-0.526,0.426
+                                	c-0.082,0.061-0.17,0.12-0.257,0.18c-0.226,0.156-0.462,0.311-0.721,0.463c-0.068,0.041-0.141,0.08-0.212,0.12
+                                	c-0.298,0.168-0.609,0.335-0.945,0.497c-0.043,0.021-0.088,0.041-0.132,0.061c-0.375,0.177-0.767,0.351-1.186,0.519
+                                	c-0.012,0.005-0.024,0.009-0.036,0.014c-2.271,0.907-5.176,1.67-8.561,2.17c-0.017,0.002-0.034,0.004-0.051,0.007
+                                	c-0.658,0.097-1.333,0.183-2.026,0.259c-0.113,0.012-0.232,0.02-0.346,0.032c-0.605,0.063-1.217,0.121-1.847,0.167
+                                	c-0.288,0.021-0.59,0.031-0.883,0.049c-0.474,0.028-0.943,0.059-1.429,0.076C29.137,28.984,28.327,29,27.5,29
+                                	s-1.637-0.016-2.432-0.044c-0.486-0.017-0.955-0.049-1.429-0.076c-0.293-0.017-0.595-0.028-0.883-0.049
+                                	c-0.63-0.046-1.242-0.104-1.847-0.167c-0.114-0.012-0.233-0.02-0.346-0.032c-0.693-0.076-1.368-0.163-2.026-0.259
+                                	c-0.017-0.002-0.034-0.004-0.051-0.007c-3.385-0.5-6.29-1.263-8.561-2.17c-0.012-0.004-0.024-0.009-0.036-0.014
+                                	c-0.419-0.168-0.812-0.342-1.186-0.519c-0.043-0.021-0.089-0.041-0.132-0.061c-0.336-0.162-0.647-0.328-0.945-0.497
+                                	c-0.07-0.04-0.144-0.079-0.212-0.12c-0.259-0.152-0.495-0.307-0.721-0.463c-0.086-0.06-0.175-0.119-0.257-0.18
+                                	c-0.191-0.141-0.362-0.283-0.526-0.426c-0.089-0.078-0.179-0.156-0.26-0.236c-0.134-0.13-0.252-0.26-0.363-0.392
+                                	c-0.078-0.092-0.153-0.184-0.219-0.277c-0.088-0.123-0.163-0.246-0.231-0.369c-0.054-0.099-0.102-0.198-0.143-0.297
+                                	c-0.049-0.121-0.088-0.242-0.116-0.363C4.541,21.823,4.5,21.661,4.5,21.5c0-0.113,0.013-0.226,0.031-0.338
+                                	c0.025-0.151,0.011-0.302-0.031-0.445v-7.424c0.12,0.109,0.257,0.216,0.387,0.324c0.072,0.06,0.139,0.12,0.215,0.18
+                                	c0.3,0.236,0.624,0.469,0.975,0.696c0.073,0.047,0.155,0.093,0.231,0.14c0.294,0.183,0.605,0.362,0.932,0.538
+                                	c0.121,0.065,0.242,0.129,0.367,0.193c0.365,0.186,0.748,0.367,1.151,0.542c0.066,0.029,0.126,0.059,0.193,0.087
+                                	c0.469,0.199,0.967,0.389,1.485,0.573c0.143,0.051,0.293,0.099,0.44,0.149c0.412,0.139,0.838,0.272,1.279,0.401
+                                	c0.159,0.046,0.315,0.094,0.478,0.138c0.585,0.162,1.189,0.316,1.823,0.458c0.087,0.02,0.181,0.036,0.269,0.055
+                                	c0.559,0.122,1.139,0.235,1.735,0.341c0.202,0.036,0.407,0.07,0.613,0.104c0.567,0.093,1.151,0.178,1.75,0.256
+                                	c0.154,0.02,0.301,0.043,0.457,0.062c0.744,0.09,1.514,0.167,2.305,0.233c0.195,0.016,0.398,0.028,0.596,0.042
+                                	c0.633,0.046,1.28,0.084,1.942,0.114c0.241,0.011,0.481,0.022,0.727,0.031C25.712,18.979,26.59,19,27.5,19s1.788-0.021,2.65-0.05
+                                	c0.245-0.009,0.485-0.02,0.727-0.031c0.662-0.03,1.309-0.068,1.942-0.114c0.198-0.015,0.4-0.026,0.596-0.042
+                                	c0.791-0.065,1.561-0.143,2.305-0.233c0.156-0.019,0.303-0.042,0.457-0.062c0.599-0.078,1.182-0.163,1.75-0.256
+                                	c0.206-0.034,0.411-0.068,0.613-0.104c0.596-0.106,1.176-0.219,1.735-0.341c0.088-0.019,0.182-0.036,0.269-0.055
+                                	c0.634-0.142,1.238-0.297,1.823-0.458c0.163-0.045,0.319-0.092,0.478-0.138c0.441-0.129,0.867-0.262,1.279-0.401
+                                	c0.147-0.05,0.297-0.098,0.44-0.149c0.518-0.184,1.017-0.374,1.485-0.573c0.067-0.028,0.127-0.058,0.193-0.087
+                                	c0.403-0.176,0.786-0.356,1.151-0.542c0.125-0.064,0.247-0.128,0.367-0.193c0.327-0.175,0.638-0.354,0.932-0.538
+                                	c0.076-0.047,0.158-0.093,0.231-0.14c0.351-0.227,0.675-0.459,0.975-0.696c0.075-0.06,0.142-0.12,0.215-0.18
+                                	C50.243,13.509,50.38,13.402,50.5,13.293z M27.5,2c13.555,0,23,3.952,23,7.5s-9.445,7.5-23,7.5s-23-3.952-23-7.5S13.945,2,27.5,2z
+                                	 M50.5,45.703c-0.014,0.044-0.024,0.089-0.032,0.135C49.901,49.297,40.536,53,27.5,53S5.099,49.297,4.532,45.838
+                                	c-0.008-0.045-0.019-0.089-0.032-0.131v-8.414c0.028,0.026,0.063,0.051,0.092,0.077c0.218,0.192,0.44,0.383,0.69,0.567
+                                	C9.049,40.786,16.582,43,27.5,43c10.872,0,18.386-2.196,22.169-5.028c0.302-0.22,0.574-0.447,0.83-0.678l0.001-0.001V45.703z">
+                                </path>
+                              </svg>
+                              <img>
+                            </span>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+< >
+{% if d_hidden %}
+<script>
+  window.onload = function() {
+  $('html, body').animate({
+     scrollTop: $('#table_detail').offset().top
+       }, 500
+   );
+  }
+</script>
+{% endif %}
+{% if c_hidden %}
+<script>
+  window.onload = function() {
+  $('html, body').animate({
+     scrollTop: $('#table_calculate').offset().top
+       }, 500
+   );
+  }
+</script>
+{% endif %}
+<script>
+    $("#d-adress").suggestions({
+        token: "6a17cd66d7e8283bf152d75f89e61bf198e79433",
+        type: "ADDRESS",
+    });
+</script>
+<script>
+    $("#d-company").suggestions({
+        token: "6a17cd66d7e8283bf152d75f89e61bf198e79433",
+        type: "PARTY",
+    });
+</script>
+<script>
+    $("#c-adress").suggestions({
+        token: "6a17cd66d7e8283bf152d75f89e61bf198e79433",
+        type: "ADDRESS",
+    });
+</script>
+<script>
+    $("#с-company").suggestions({
+        token: "6a17cd66d7e8283bf152d75f89e61bf198e79433",
+        type: "PARTY",
+    });
+</script>
